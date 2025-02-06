@@ -37,7 +37,8 @@ def gitpush(path, url):
       return False
    return True
 
-gitlab = gitlab.Gitlab(gitlab_cred["host"], token=gitlab_cred["token"])
+gitlab = gitlab.Gitlab(gitlab_cred["host"], token=gitlab_cred["token"]) #The gitlab object is created in the script with the connection details (gitlab_cred), 
+#which means it's authenticated with the GitLab server.
 g = Github(github_cred["token"])
 g_user = g.get_user()
 
@@ -45,8 +46,18 @@ total=[]
 migrated=[]
 skipped=[]
 failed=[]
+gitlab.getall(gitlab.getprojects):
+#The loop for project in gitlab.getall(gitlab.getprojects): iterates over each repository (project) returned by gitlab.getall(gitlab.getprojects). 
+#Each project is a dictionary containing the details of a GitLab repository (such as the name, description, and the repository's URL).
+#Inside the loop, various actions are performed:
+#The script extracts the repository’s details, such as path (the name of the repository) and description.
+#It checks whether the repository already exists on GitHub.
+#It clones the repository from GitLab to the local machine.
+#It creates a new repository on GitHub and pushes the cloned repository there.
 
-for project in gitlab.getall(gitlab.getprojects):
+#gitlab.getall(gitlab.getprojects): This is a method call that fetches a list of all projects (repositories) from GitLab.
+
+for project in gitlab.getall(gitlab.getprojects):  # gitlab.getprojects is likely a method (or API endpoint) that retrieves the list of projects from GitLab.
     http_url_to_repo = project["http_url_to_repo"].split("://")
     path = project["path"].lower()
     description = project["description"] 
