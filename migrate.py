@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
-__author__ = "Giorgio Crivellari"
-__copyright__ = "Copyright 2016, Giorgio Crivellari"
+__author__ = "PadmaMesa"
+__copyright__ = "Copyright 2025, Padma Mesa"
 __license__ = "GPL"
 __version__ = "1.0.0"
-__maintainer__ = "Giorgio Crivellari"
-__email__ = "miticojo[at]gmail.com"
+__maintainer__ = "Padma Mesa"
+__email__ = "mpadma.mesa@gmail.com"
 
 import os
 import shutil
