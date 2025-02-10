@@ -16,7 +16,7 @@ Utility to migrate all repositories from Gitlab to Github.
 
 ## Install 
 ``` bash
-git clone https://github.com/miticojo/gitlab-to-github.git
+git clone https://github.com/padma/gitlab-to-github.git
 cd gitlab-to-github
 sudo pip istall -r requirements
 ```
