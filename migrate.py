@@ -5,7 +5,7 @@ __copyright__ = "Copyright 2025, Padma Mesa"
 __license__ = "ex"
 __version__ = "1.0.0"
 __maintainer__ = "Padma Mesa"
-__email__ = "mpadma.mesa@gmail.com"
+__email__ = "padma.mesa@gmail.com"
 
 import os
 import shutil
